@@ -1,0 +1,173 @@
+---
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Blog | Tech People</title>
+	</head>
+	<body>
+		<header>
+			<p>Feedback For Techtack-Technologies or Team-Litho</p>
+		</header>
+
+		<main>
+			<div class="container-alert">
+				<p>
+					Please fill out the form below to provide your feedback.
+					Your input is valuable to us and will help us improve our
+					services.
+				</p>
+			</div>
+			<div class="feedback-container">
+				<h1>Feedback form request</h1>
+				<form id="QZD2eWWqxtOhJPC9Qe7K" method="POST">
+					<fieldset>
+						<legend>Feedback (required)</legend>
+						<label for="feedback">Your feedback:</label>
+						<textarea
+							name="feedback"
+							id="feedback"
+							placeholder="Your feedback here"
+							rows="5"
+							cols="50"></textarea>
+					</fieldset>
+
+					<fieldset>
+						<legend>Contact Information</legend>
+						<label for="email">Email (required):</label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Your email here"
+						/>
+
+						<label for="telephone">Telephone (required):</label>
+						<input
+							type="number"
+							name="telephone"
+							id="telephone"
+							placeholder="Your telephone here"
+						/>
+					</fieldset>
+
+					<fieldset>
+						<legend>Personal Information</legend>
+						<label for="first_name">First Name (required):</label>
+						<input
+							type="text"
+							name="first_name"
+							id="first_name"
+							placeholder="Your first name here"
+						/>
+
+						<label for="last_name">Last Name (required):</label>
+						<input
+							type="text"
+							name="last_name"
+							id="last_name"
+							placeholder="Your last name here"
+						/>
+					</fieldset>
+
+					<input type="submit" value="Send" />
+					<input type="reset" value="Reset" />
+				</form>
+			</div>
+		</main>
+
+		<script type="module" src="../../public/script/feedback.ts"></script>
+		<script type="module" src="../../public/script/firebase.ts"></script>
+	</body>
+</html>
+
+<style>
+	body,
+	html {
+		padding: 0;
+		margin: 0;
+		background-color: #161616;
+	}
+
+	.container-alert {
+		background-color: rgb(201, 19, 19);
+		border-bottom: 1px solid white;
+		padding: 15px;
+		text-align: center;
+	}
+
+	.container-alert p {
+		color: lightgray;
+		font-family: sans-serif;
+		font-size: 19px;
+	}
+
+	header {
+		background-color: slateblue;
+		padding: 25px;
+	}
+
+	header p {
+		color: white;
+		font-family: sans-serif;
+		text-align: center;
+		font-size: 23px;
+	}
+
+	.feedback-container {
+		padding-top: 35px;
+		text-align: center;
+		margin: auto;
+	}
+
+	.feedback-container h1 {
+		color: white;
+		font-family: sans-serif;
+	}
+
+	form#QZD2eWWqxtOhJPC9Qe7K {
+		font-family: sans-serif;
+		color: lightgrey;
+	}
+
+	fieldset {
+		padding: 15px;
+		margin: 8px;
+	}
+
+	input[type="text"],
+	[type="email"],
+	[type="number"] {
+		width: 256px;
+		padding: 15px;
+	}
+
+	input[type="submit"] {
+		background-color: rgb(114, 123, 139);
+		color: white;
+		padding: 15px;
+		margin: 8px;
+		border-radius: 5px;
+		border: none;
+		font-family: sans-serif;
+		font-size: 20px;
+		cursor: pointer;
+	}
+
+	input[type="reset"] {
+		background-color: rgb(104, 13, 1);
+		color: white;
+		padding: 15px;
+		margin: 8px;
+		border-radius: 5px;
+		border: none;
+		font-family: sans-serif;
+		font-size: 20px;
+		cursor: pointer;
+	}
+</style>
